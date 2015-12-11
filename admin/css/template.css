@@ -1,0 +1,48 @@
+body{
+	margin:0;
+	padding:0;
+}
+
+.headerWrapper{
+	height:100px;
+	width:100%;
+	background:tan;
+	border:1px solid #009;
+	float:left;
+}
+.contentWrapper{
+	height:400px;
+	width:100%;
+	background:plum;
+	border:1px solid #000;
+	float:left;
+}
+
+.footerWrapper{
+	height:40px;
+	width:100%;
+	background:salmon;
+	border:1px solid #000;
+	float:left;
+}
+
+.leftSection{
+	height:100%;
+	width:30%;
+	background:green;
+	float:left;
+}
+
+.rightSection{
+	height:100%;
+	width:70%;
+	background:red;
+	float:left;
+}
+
+.title{
+	border:5px solid blue;
+	float:left;
+	margin:10px;
+	padding:10px;
+}

@@ -1,0 +1,22 @@
+.headerWrapper{
+	height:100px;
+	background:red;
+}
+
+.contentWrapper{
+	height:400px;
+}
+
+.leftSection{
+	background:blue;
+	height:100%;
+}
+.rightSection{
+	background:none;
+	height:100%;
+}
+
+.footerWrapper{
+	height:20px;
+	background:salmon;
+}
