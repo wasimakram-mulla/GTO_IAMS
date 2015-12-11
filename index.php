@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Green Top Organics</title>
+<title>Green Top Organics - Inventory and Management System</title>
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/component.css" rel="stylesheet" type="text/css"  />
