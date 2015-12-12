@@ -74,7 +74,7 @@
 		<div class="container">			
 			<div class="about-info">
 				<div class="col-md-6 about-grids">	
-					<h3>Who We Are? </h3>
+					<h3>Who are we? </h3>
 					<img src="images/img2.jpg" alt=""/>
 					<h5>Aenean pulvinar ac enimet posuere tincidunt velit Utin Integer in tincidunt velit</h5>
 					<p>In sit amet sapien eros. Integer in tincidunt velit. Ut in tincidunt velit sapien est, 
@@ -231,8 +231,8 @@
 					</ul>
 				</div>
 				<div class="col-md-4 footer-grids">
-					<h2><a href="index.php">Who We Are??</a></h2>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <p>
+					<h2><a href="index.php">Who are we?</a></h2>
+					<p>We are the people who initiated the manufacturing of this product with the intetion of helping Indian farmers with quality products for their soil. We provide an eco friendly product without any noxious chemicals which will not cause any loss to the fertility of the soil.  <p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>

@@ -212,8 +212,8 @@
 					</ul>
 				</div>
 				<div class="col-md-4 footer-grids">
-					<h2><a href="index.php">Who We Are??</a></h2>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <p>
+					<h2><a href="index.php">Who are we?</a></h2>
+					<p>We are the people who initiated the manufacturing of this product with the intetion of helping Indian farmers with quality products for their soil. We provide an eco friendly product without any noxious chemicals which will not cause any loss to the fertility of the soil.  <p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
