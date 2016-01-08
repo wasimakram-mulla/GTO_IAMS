@@ -11,8 +11,9 @@ $db=  mysql_select_db('logindb',$con)
 	$count =  mysql_num_rows($result);	
 	if($count>0){
 		echo "Login Successful";
+		header('location:../startbootstrap-sb-admin-2-1.0.8/logindash.php');
 	}
 	else{
-		echo "Ghar ku ja shane";
+		echo "Login Unsuccessful";
 	}
 ?>

@@ -227,14 +227,14 @@ p.title {
 }
 /*--slid--*/
 .slid {
-  background: url(../images/slid.jpg) no-repeat 0px 0px;
+  background: url(../images/Apple-Fruit-Bucket-on-Grass-Wallpapers.jpeg) no-repeat 0px 0px;
   background-size: cover;
   padding: 5em 0;
   text-align: center;
 }
 .slid-grids {
   width: 25%;
-  margin: 0 31em;
+  margin: 0 35em;
   padding: 2.5em 0 3em;
   transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -317,7 +317,7 @@ p.title {
 /*--//services--*/
 /*--testi--*/
 .testi {
-  background: url(../images/slid1.jpg) no-repeat 0px 0px;
+  background: url(../images/the-field3a.jpg) no-repeat 0px 0px;
   background-size: cover;
   padding: 5em 0;
   text-align: center;

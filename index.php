@@ -8,23 +8,24 @@
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Farming Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Farming Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //Custom Theme files -->
 <!-- js -->
-<script src="js/jquery-1.11.1.min.js"></script> 
+<script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <!-- //js -->
 </head>
 <body class="cbp-spmenu-push">
 	<!--banner-->
 	<div class="banner">
-		<!--header-->		
+		<!--header-->
 		<div class="header">
-			<div class="container">	
+			<div class="container">
 				<div class="logo">
-					<a href="index.php"> <img src="images/logo.png" alt=""/></a>
+					<a href="index.php"> <!-- <img src="images/logo.png" alt=""/> --> </a>
+					<h1> Green Top Organics </h1>
 				</div>
 				<div class="top-nav">
 					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
@@ -35,7 +36,7 @@
 						<a href="contact.php">Contact</a>
 						<a href="admin/login.php">Login</a>
 					</nav>
-					<div class="main buttonset">	
+					<div class="main buttonset">
 							<!-- Class "cbp-spmenu-open" gets applied to menu and "cbp-spmenu-push-toleft" or "cbp-spmenu-push-toright" to the body -->
 							<button id="showRightPush"><img src="images/menu-icon.png" alt=""/></button>
 							<!--<span class="menu"></span>-->
@@ -61,33 +62,33 @@
 						}
 					</script>
 					<!-- /script-for-menu -->
-				</div>	
+				</div>
 			</div>
 		</div>
 		<!--//header-->
-		<div class="banner-text">	
-			<h1>LOREM IPSUM IS NOT SIMPLY RANDOM TEXT</h1>
-			<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour, or randomised words which don't look even slightly believable.</p>
+		<div class="banner-text">
+			<h1>Green Top Organics - Who Are We?</h1>
+			<p>We are the people who initiated the manufacturing of this product with the intention of helping Indian farmers with quality products for their soil. We provide an eco friendly product without any noxious chemicals which will not cause any loss to the fertility of the soil. </p>
 		</div>
 	</div>
 	<!--//banner-->
 	<div class="hm-about">
-		<div class="container">	
+		<div class="container">
 			<div class="col-md-5 hm-about-left">
 				<img src="images/img1.jpg" alt="">
 			</div>
 			<div class="col-md-7 hm-about-left">
-				<h5>Vestibulum ullam consectetur tristique fermentum</h5>
-				<p>Proin eget ipsum ultrices, aliquet velit eget  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable							
+				<h5>Amit ullam consectetur tristique fermentum</h5>
+				<p>Proin eget ipsum ultrices, aliquet velit eget  Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable
 				tempus tortor Phasellus non velit sit amet diam faucibus molestie. Mauris sapien eros, mattis et elit non, tincidunt efficitur nisi augue dui iaculis nulla, a pretium nisl turpis vel augue auctor viverra aliquam .</p>
 				<a class="btn btn-1 btn-1d" href="#"> Read More </a>
-			</div>				
+			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 	<!--banner-bottom-->
 	<div class="banner-bottom">
-		<div class="container">	
+		<div class="container">
 			<h3 class="title">What is Farming</h3>
 			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
 			<h4>Finibus Bonorum et Malorum Lorem Ipsum passage</h4>
@@ -111,9 +112,9 @@
 	<!--//banner-bottom-->
 	<!--slid-->
 	<div class="slid">
-		<div class="container">	
+		<div class="container">
 			<h3 class="title">Pricing</h3>
-			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>			
+			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
 			<div class="slid-row">
 				<!-- <div class="col-md-4 slid-grids">
 					<h4>Perspici</h4>
@@ -139,7 +140,7 @@
 	<div class="services" id="services">
 		<div class="container">
 			<h3 class="title">Services Overview</h3>
-			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>			
+			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
 			<div class="service-grids">
 				<div class="col-md-4 srvc-grids-info">
 					<div class="srvc-img">
@@ -162,7 +163,7 @@
 					<h5>Improves soil life cycle</h5>
 					<p>Claritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam </p>
 				</div>
-				<div class="clearfix"> </div>				
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
@@ -171,7 +172,7 @@
 	<div class="testi">
 		<div class="container">
 			<h3 class="title">Testimonials</h3>
-			<p class="title">At vero eos et accusamus et iusto odio dignissimos ducimus qui cupiditate non provident</p>			
+			<p class="title">What our Customers say about our product..!</p>
 			<!-- banner-text Slider starts Here -->
 			<script src="js/responsiveslides.min.js"></script>
 			<script>
@@ -190,22 +191,23 @@
 						after: function () {
 							$('.events').append("<li>after event fired.</li>");
 						}
-					});	
+					});
 				});
 			</script>
 			<!--//End-slider-script -->
 			<div  id="top" class="callbacks_container">
 				<ul class="rslides" id="slider3">
-					<li>					
-						<p>" Claritas est etiam processus dynaicus qui sequitur mutationem At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis consuetudium lectorum. Mirum est notare quam "</p>
-						<h4>Dynai </h4>
+					<li>
+						<p class="title">" I've been using this for my lawn and I have to say it works wonders. I purchased a house with a shared front lawn which looked quite frail and green-yellowish colored. I applied this product and about a month later my neighbor asked if I was putting steroids into my lawn. My half of the lawn looked absolutely beautiful compared to his side of the lawn. The best thing about this product is that it's dummy proof. You WILL NOT burn your grass if you put more than the recommended amount since it's organic. "</p>
+						<h4>Mammu </h4>
 					</li>
-					<li>					
-						<p>" At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiislaritas est etiam processus dynaicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam "</p>
-						<h4>Sequit </h4>
+					<li>
+						<p class="title">" Excellent product and it has Not been discontinued by the manufacturer. It is readily available at about 1/3 the price shown. This takes a few weeks to work its wonders but limey-green spots, resulting from over watering / iron deficiency will disappear. It does not promote burning and you can overdo the spread rate without worry. "</p>
+						<h4>Wazia </h4>
 					</li>
-					<li>					
-						<p>" Vlaritas est etiam processus dynaicus qui At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis sequitur mutationem consuetudium lectorum. Mirum est notare quam "</p>
+					<li>
+						<p class="title">"One of the best types of fertilizer you can get.
+							having a degree in Agriculture and owning my own lawn care business, I try to use only the best products. available not only is milorganite great for plants and soil its organic and slow release, Everything you want from a fertilizer. and it wont burn the grass if you screw up your spreading calculations. love this stuff even if it is just Sewer sludge  "</p>
 						<h4>Etiamy </h4>
 					</li>
 				</ul>
@@ -218,7 +220,7 @@
 		<div class="container">
 			<div class="footer-row">
 				<div class="col-md-4 footer-grids">
-					<h3>Navigation</h3>					
+					<h3>Navigation</h3>
 					<ul>
 						<li><a href="index.php">Home</a></li>
 						<li><a href="about.php">About us</a></li>
@@ -247,7 +249,7 @@
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="footer-left">
-								<p>Green Top Organics | Designed By Mr.Mohseen Mulla</a></p>		
+								<p>Green Top Organics | Designed By Mr.Mohseen Mulla</a></p>
 			</div>
 			<div class="footer-right">
 				<ul class="icons">
