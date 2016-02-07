@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     
+	<!-- DateTimePicker CSS -->
 	<link href="../bower_components/bootstrap/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -28,13 +29,6 @@
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -47,7 +41,7 @@ include ("../conn/conn.php");
 ?>
 
 <div id="page-wrapper">
-<form action="" method="POST">
+<form action="db_purchase.php" method="post">
 	<div class="row">
 		<div class="col-lg-12">
 			<h3 class="page-header"> 
@@ -55,7 +49,7 @@ include ("../conn/conn.php");
 			</h3>
 		</div>
 	</div>
-	
+	<!--
 	<div class="row">
 		<div class="col-md-3 col-sm-4 col-xs-12">
 			<label class="text-info">Purchase Code: </label>
@@ -65,14 +59,14 @@ include ("../conn/conn.php");
 			<input type="text" placeholder="Purchase Code" class="form-control"/>	<br/>
 		</div>
 	</div>
-	
+	-->
 	<div class="row">
 		<div class="col-md-3 col-sm-4 col-xs-12">
 		<label class="text-info">Enter Purchase Date: </label> 
 		</div>
 	<div class="col-md-6 col-sm-6 col-xs-12">
 		<div class="input-group date">
-			<input type="text" placeholder="Purchase Date" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="Purchase Date" class="form-control" id="purchaseDt" name="txtpdate">
 			<span class="input-group-addon">
 				<span class="fa fa-calendar"></span>
 			</span>
@@ -100,12 +94,11 @@ include ("../conn/conn.php");
 			<label class="text-info">Supplier: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="hidden"/>
-			<input type="text" placeholder="Supplier" class="form-control" readonly />		
+			<input type="hidden" name="txthsupp" id="SuppId"/>
+			<input type="text" placeholder="Supplier" class="form-control" id="SuppName" readonly / name="txtsupp">		
 		</div>
 		<div class="col-md-3 col-sm-2 col-xs-2">		
-			<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
+			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
                                 ...
                             </button>
                             <!-- Modal -->
@@ -128,17 +121,17 @@ include ("../conn/conn.php");
 												</thead>
 												<tbody>
 												<?php
-													$sup="select supplier_master.supp_name,supplier_master.supp_add,supplier_master.supp_city,supplier_master.supp_cntpr,supplier_master.supp_cntno,supplier_master.supp_eMail,supplier_master.supp_vat,product_master.prod_name from supplier_master,product_master where supplier_master.prod_id=product_master.prod_id";
+													$sup="select supplier_master.supp_name,supplier_master.supp_add,supplier_master.supp_city,supplier_master.supp_cntpr,supplier_master.supp_cntno,supplier_master.supp_eMail,supplier_master.supp_vat,product_master.prod_name,product_master.prod_id,supplier_master.supp_id from supplier_master,product_master where supplier_master.prod_id=product_master.prod_id and product_master.prod_id between 1 and 4";
 													$resProd=mysql_query($sup);
 													while($row=mysql_fetch_array($resProd))
 													{
 												?>
 													<tr align="center">
-														<td><?php echo $row['supp_name'];?></td>
+														<td><label id="lbl1"><?php echo $row['supp_name'];?></label></td>
 														<td><?php echo $row['supp_city'];?></td>
 														<td><?php echo $row['prod_name'];?></td>
 														<td>
-														<button class="btn btn-success" data-toggle="modal" data-target="#myModal" onClick="setEditValue('<?php echo $row['supp_name'];?>','<?php echo $row['supp_city']?>','<?php echo $row['prod_name'];?>'><i class="fa fa-thumbs"></i> Select 
+														<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" onClick="setEditValue('<?php echo $row['supp_name'];?>','<?php echo $row['prod_name'];?>',<?php echo $row['supp_id'];?>,<?php echo $row['prod_id'];?>);"> Select 
 														</button></td>
 													</tr>
 												<?php
@@ -162,8 +155,8 @@ include ("../conn/conn.php");
 			<label class="text-info">Product: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="text" placeholder="Product" class="form-control" readonly name="txtProd"/><br/>
+			<input type="hidden" name="txthprod" id="ProdId"/>
+			<input type="text" placeholder="Product" class="form-control" readonly name="txtProd" id="ProdName"/><br/>
 		</div>
 	</div>
 	
@@ -172,8 +165,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Bill/Invoice: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="text" placeholder="Bill/Invoice" class="form-control" />	<br/>
+			<input type="text" placeholder="Bill/Invoice" class="form-control" / name="txtbill">	<br/>
 		</div>
 	</div>
 	
@@ -183,7 +175,7 @@ include ("../conn/conn.php");
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
 			<input type="hidden"/>
-			<input type="text" placeholder="Weight (in M.T)" class="form-control" />	<br/>
+			<input type="text" placeholder="Weight (in M.T)" class="form-control" name="txtwgt" />	<br/>
 		</div>
 	</div>
 	
@@ -193,7 +185,7 @@ include ("../conn/conn.php");
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
 			<input type="hidden"/>
-			<input type="text" placeholder="Rate in ( I.N.R )" class="form-control" />	<br/>
+			<input type="text" placeholder="Rate in ( I.N.R )" class="form-control" name="txtrate" />	<br/>
 		</div>
 	</div>
 
@@ -202,7 +194,7 @@ include ("../conn/conn.php");
 			<label class="text-info">V.A.T : </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="text" class="form-control" placeholder="V.A.T" / required><br/>
+			<input type="text" class="form-control" placeholder="V.A.T" name="txtVAT" / required><br/>
 		</div>
 	</div>
 	
@@ -212,12 +204,12 @@ include ("../conn/conn.php");
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
 			<input type="hidden"/>
-			<input type="text" placeholder="Final Amount" class="form-control" />	<br/>
+			<input type="text" placeholder="Final Amount" class="form-control" name="txtFA" />	<br/>
 		</div>
 	</div>
 	<br/>
 	<div class="col-md-10 col-sm-12-col-xs-12" align="center">
-		<button class="btn btn-primary btn-outline" type="button"><i class="fa fa-rupee"></i><b> Payment</b> </button>
+		<button class="btn btn-primary btn-outline"><i class="fa fa-rupee"></i><b> Save</b> </button>
 	</div>
 </div>
 </form>
@@ -244,15 +236,18 @@ include ("../conn/conn.php");
 <script type="text/javascript">
 $(function() {  
     $('#purchaseDt').datetimepicker({
-		format: 'D/M/YYYY',
+		//format: 'D/M/YYYY',
 		maxDate:new Date()
 	});
 });
 
-	function setEditValue(edtValid, edtValnm)
+	function setEditValue(edtValnm, edtValprod, edtValsuppid,edtValprodid)
 	{
-		document.getElementById('editTextModalId').value=edtValid;
-		document.getElementById('editTextModalName').value=edtValnm;
+		//alert(edtValnm+" "+edtValprod);
+		document.getElementById('SuppName').value=edtValnm;
+		document.getElementById('ProdName').value=edtValprod;
+		document.getElementById('SuppId').value=edtValsuppid;
+		document.getElementById('ProdId').value=edtValprodid;
 	}
   //DTP from: http://eonasdan.github.io/bootstrap-datetimepicker/
 </script>

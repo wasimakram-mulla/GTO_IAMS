@@ -13,6 +13,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+	<link href="../bower_components/bootstrap/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
@@ -68,7 +70,7 @@ include ("../conn/conn.php");
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
 		<div class="input-group date">
-			<input type="text" placeholder="Date" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="Date" class="form-control" id="purchaseDt1">
 			<span class="input-group-addon">
 				<span class="fa fa-calendar"></span>
 			</span>
@@ -94,7 +96,7 @@ include ("../conn/conn.php");
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
 		<div class="input-group date">
-			<input type="text" placeholder="Date" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="Date" class="form-control" id="purchaseDt2">
 			<span class="input-group-addon">
 				<span class="fa fa-calendar"></span>
 			</span>
@@ -122,6 +124,10 @@ include ("../conn/conn.php");
     <!-- Bootstrap Core JavaScript -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+	<script src="../bower_components/moment/moment.js"></script>
+	
+	<script src="../bower_components/bootstrap/dist/js/bootstrap-datetimepicker.min.js"></script>
+	
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
@@ -133,7 +139,17 @@ include ("../conn/conn.php");
 
 <script type="text/javascript">
 $(function() {  
-    $('#purchaseDt').datetimepicker({
+    $('#purchaseDt1').datetimepicker({
+		format: 'D/M/YYYY',
+		maxDate:new Date()
+	});
+});
+  //DTP from: http://eonasdan.github.io/bootstrap-datetimepicker/
+</script>
+
+<script type="text/javascript">
+$(function() {  
+    $('#purchaseDt2').datetimepicker({
 		format: 'D/M/YYYY',
 		maxDate:new Date()
 	});

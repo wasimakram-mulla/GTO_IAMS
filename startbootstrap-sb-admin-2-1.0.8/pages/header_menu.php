@@ -279,9 +279,9 @@
 								<li>
 									<a href="sales_new_order.php"><i class="fa fa-dropbox fa-fw"></i> New Order</a>
 								</li>
-								<li>
+								<!--<li>
 									<a href="sales_despatches.php"><i class="fa fa-envelope-o fa-fw"></i> Dispatches</a>
-								</li>	
+								</li>	-->
 								<li>
 									<a href="sales_generate_bills.php"><i class="fa fa-paste fa-fw"></i> Generate Bills</a>
 								</li>
@@ -294,7 +294,7 @@
                                     <a href="client_new.php"><i class="fa fa-plus fa-fw"></i> New Client</a>
                                 </li>
                                 <li>
-                                    <a href="buttons.html"><i class="fa fa-user fa-fw"></i> All Clients</a>
+                                    <a href="client_list.php"><i class="fa fa-user fa-fw"></i> All Clients</a>
                                 </li>
   							</ul>
                             <!-- /.nav-second-level -->

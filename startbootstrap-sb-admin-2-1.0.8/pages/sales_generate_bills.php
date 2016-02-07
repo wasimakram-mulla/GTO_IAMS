@@ -13,6 +13,8 @@
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
+	<link href="../bower_components/bootstrap/dist/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+	
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
@@ -73,7 +75,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Bill Number: </label> 
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
-			<input type="text" placeholder="Bill No" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="Bill No" class="form-control">
 		</div>
 	</div>
 	</div>
@@ -119,7 +121,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Discount: </label> 
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
-			<input type="text" placeholder="Discount" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="Discount" class="form-control">
 		</div>
 	</div>
 	</div>
@@ -140,7 +142,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Net Amount: </label> 
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
-			<input type="text" class="form-control" placeholder="Net Amount" id="purchaseDt"/>
+			<input type="text" class="form-control" placeholder="Net Amount"/>
 		</div>
 	</div>
 	</div>
@@ -155,7 +157,11 @@ include ("../conn/conn.php");
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+	
+	<script src="../bower_components/moment/moment.js"></script>
+	
+	<script src="../bower_components/bootstrap/dist/js/bootstrap-datetimepicker.min.js"></script>
+	
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
 

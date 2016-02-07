@@ -41,27 +41,30 @@ include ("../conn/conn.php");
 	<div class="row">
 		<div class="col-md-10 col-sm-12 col-xs-12">
 			<?php
-				$name=$_REQUEST['txtnm'];
-				$add=$_REQUEST['txtadd'];
-				$city=$_REQUEST['txtcity'];
-				$cPerson=$_REQUEST['txtcontactPerson'];
-				$cNo=$_REQUEST['txtContactNo'];
-				$eMail=$_REQUEST['txtEmailAdd'];
-				$selProd=$_REQUEST['txtselProduct'];
-				$vat=$_REQUEST['txtvat'];
-				//echo $name." -*- ".$add." -*- ".$city." -*- ".$cPerson." -*- ".$cNo." -*- ".$selProd." -*- ".$vat;
-				$selSuppliers="INSERT INTO `supplier_master`(`supp_name`, `supp_add`, `supp_city`, `supp_cntpr`, `supp_cntno`, `supp_eMail`, `prod_id`, `supp_vat`) VALUES ('".$name."','".$add."','".$city."','".$cPerson."','".$cNo."','".$eMail."','".$selProd."','".$vat."')";
+				$date=$_REQUEST['txtpdate'];
+				$date=date("Y-m-d",strtotime($date));
+				$supp=$_REQUEST['txthsupp'];
+				$prod=$_REQUEST['txthprod'];
+				$bill=$_REQUEST['txtbill'];
+				$weight=$_REQUEST['txtwgt'];
+				$rate=$_REQUEST['txtrate'];
+				$VAT=$_REQUEST['txtVAT'];
+				$final=$_REQUEST['txtFA'];
+				
+			//	echo $date." -*- ".$supp." -*- ".$bill." -*- ".$weight." -*- ".$rate." -*- ".$VAT." -*- ".$final;
+				$selSuppliers="INSERT INTO `purchase_details`(`purchase_date`, `supp_id`, `prod_id`, `bill_no`, `weight`, `rate`, `vat`, `final_amount`) VALUES ('".$date."','".$supp."','".$prod."','".$bill."','".$weight."','".$rate."','".$VAT."','".$final."')";
 				$resSuppliers=mysql_query($selSuppliers);
+				echo $resSuppliers;
 				if($resSuppliers){
 				?>
-				<strong class="text-success">Successfully Added Supplier.</strong>
+				<strong class="text-success">Product inwarded Successfully.</strong>
 				<br/><br/>
 				<h4 class="text-info">Please wait... <i class="fa fa-spin fa-spinner"></i></h4>
-				<script>
+			<!--	<script>
 					setTimeout(function(){
-						window.location.assign('supplier_add.php');
+						window.location.assign('inward_Purchase.php');
 					},2000);
-				</script>
+				</script> -->
 				<?php
 				}
 				else
