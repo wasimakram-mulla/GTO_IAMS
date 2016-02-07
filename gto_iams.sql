@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 07, 2016 at 05:53 PM
+-- Generation Time: Feb 07, 2016 at 07:19 PM
 -- Server version: 5.5.25a
 -- PHP Version: 5.4.4
 
@@ -38,6 +38,31 @@ CREATE TABLE IF NOT EXISTS `client_master` (
   `client_status` varchar(20) NOT NULL,
   PRIMARY KEY (`client_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `production_batch_register`
+--
+
+CREATE TABLE IF NOT EXISTS `production_batch_register` (
+  `production_id` int(10) NOT NULL AUTO_INCREMENT,
+  `batch_no` int(10) NOT NULL,
+  `R.O.M` varchar(10) NOT NULL,
+  `S.H.W` varchar(10) NOT NULL,
+  `filler_powder` varchar(10) NOT NULL,
+  `A.W.F` varchar(10) NOT NULL,
+  `HDPE_Bags` varchar(10) NOT NULL,
+  PRIMARY KEY (`production_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `production_batch_register`
+--
+
+INSERT INTO `production_batch_register` (`production_id`, `batch_no`, `R.O.M`, `S.H.W`, `filler_powder`, `A.W.F`, `HDPE_Bags`) VALUES
+(1, 12, '5', '5', '5', '5', '5'),
+(2, 15, '1', '2', '3', '4', '5');
 
 -- --------------------------------------------------------
 

@@ -37,8 +37,9 @@
 include ("header_menu.php");
 include ("../conn/conn.php");
 ?>
-
+<form action="db_insert_production_batch.php" method="post">
 <div id="page-wrapper">
+
 	<div class="row">
 		<div class="col-lg-12">
 			<h3 class="page-header"> 
@@ -53,8 +54,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Batch Number: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="text" placeholder="Batch Number" class="form-control"/>
+			<input type="text" placeholder="Batch Number" name="batch_no" class="form-control"/>
 		</div>
 	</div>
 	<div class="col-md-6 col-sm-4 col-xs-12">
@@ -79,7 +79,7 @@ include ("../conn/conn.php");
 		<label class="text-info">Raw Organic Manure: </label>
 	</div>
 	<div class="col-md-6 col-sm-4 col-xs-12">
-		<input type="text" placeholder="R.O.M" class="form-control" />
+		<input type="text" placeholder="R.O.M" name="rom" class="form-control" />
 	</div>
 	</div>
 	
@@ -88,7 +88,7 @@ include ("../conn/conn.php");
 		<label class="text-info">Slaughter House Waste: </label>
 	</div>
 	<div class="col-md-6 col-sm-4 col-xs-12">
-		<input type="text" placeholder="S.H.W" class="form-control" />
+		<input type="text" placeholder="S.H.W" name="shw" class="form-control" />
 	</div>
 	</div>
 	</div>
@@ -100,8 +100,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Filler Powder: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="text" placeholder="Filler Powder" class="form-control"/>
+			<input type="text" placeholder="Filler Powder" name="fillerpowder" class="form-control"/>
 		</div>
 	</div>
 	<div class="col-md-6 col-sm-4 col-xs-12">
@@ -109,7 +108,7 @@ include ("../conn/conn.php");
 			<label class="text-info">Animal Waste Filler: </label> 
 		</div>
 		<div class="col-md-6 col-sm-4 col-xs-12">
-			<input type="text" placeholder="A.W.F" class="form-control" id="purchaseDt">
+			<input type="text" placeholder="A.W.F" name="awf" class="form-control" id="purchaseDt">
 		</div>
 	</div>
 	</div>
@@ -121,8 +120,7 @@ include ("../conn/conn.php");
 			<label class="text-info">HDPE Bags Used: </label>
 		</div>
 		<div class="col-md-6 col-sm-6 col-xs-10">
-			<input type="hidden"/>
-			<input type="text" placeholder="H.D.P.E" class="form-control"/>
+			<input type="text" placeholder="H.D.P.E Bags" name="hdpebags" class="form-control"/>
 		</div>
 	</div>
 	<div class="col-md-6 col-sm-4 col-xs-12">
@@ -137,10 +135,11 @@ include ("../conn/conn.php");
 	<br/>
 <div class="col-md-12 col-sm-12 col-xs-12">
 	<button type="submit" class="btn btn-success btn-outline"><i class="fa fa-save"></i> Save</button> &nbsp;&nbsp;&nbsp;&nbsp;
-	<button type="submit" class="btn btn-primary btn-outline" ><i class="fa fa-outdent"></i> Set Profile</button>
+	<button type="button" class="btn btn-primary btn-outline" ><i class="fa fa-outdent"></i> Set Profile</button>
 </div>
 <!-- Below div of closing page wrapper -->
 </div>
+</form>
 		<!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
